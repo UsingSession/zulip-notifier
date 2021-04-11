@@ -34,7 +34,7 @@ final class ZulipTransportFactory extends AbstractTransportFactory
 
         $email = $this->getUser($dsn);
         $token = $this->getPassword($dsn);
-        $channel = $dsn->getRequiredOption('channel');
+        $channel = $dsn->getOption('channel');
         $host = $dsn->getHost();
         $port = $dsn->getPort();
 
